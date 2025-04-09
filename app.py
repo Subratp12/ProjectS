@@ -7,7 +7,7 @@ ec2 = boto3.client('ec2')
 response = ec2.run_instances(
     ImageId='ami-08cb53946b34ef980',  # Amazon Linux 2 AMI (Free tier eligible, update as needed)
     InstanceType='t3.micro',
-    KeyName='Mumbai_AWS',  # Ensure this key pair exists in your AWS account
+    KeyName='SFSL',  # Ensure this key pair exists in your AWS account
     MinCount=1,
     MaxCount=1
 )
